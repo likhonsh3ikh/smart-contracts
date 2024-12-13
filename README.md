@@ -35,11 +35,3 @@ This repository uses GitHub Actions to automatically:
 2. Validate contract metadata against a predefined schema.
 3. Perform security and honeypot checks on synced contracts.
 4. Update the web interface with the latest contract data.
-
-## Usage
-
-To view the contracts and analysis, visit our [web interface](https://example.com).
-
-To run the scripts locally:
-
-1. Install the required dependencies:
