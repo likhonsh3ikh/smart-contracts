@@ -1,0 +1,8 @@
+# Placeholder for custom API sources
+# Example:
+# custom_source:
+#   url: "https://api.custom-source.com"
+#   endpoints:
+#     contracts: "/v1/contracts"
+#     tokens: "/v1/tokens"
+
