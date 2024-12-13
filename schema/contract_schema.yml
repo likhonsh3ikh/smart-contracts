@@ -1,0 +1,35 @@
+type: object
+properties:
+  name:
+    type: string
+  address:
+    type: string
+    pattern: "^0x[a-fA-F0-9]{40}$"
+  abi:
+    type: array
+  network:
+    type: string
+    enum: [ethereum, bsc, polygon]
+  type:
+    type: string
+  description:
+    type: string
+  source_code:
+    type: string
+  compiler_version:
+    type: string
+  optimization_used:
+    type: boolean
+  runs:
+    type: integer
+  constructor_arguments:
+    type: string
+  license:
+    type: string
+required:
+  - name
+  - address
+  - abi
+  - network
+  - type
+
