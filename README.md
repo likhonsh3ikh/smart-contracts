@@ -1,21 +1,22 @@
 # Advanced Smart Contracts Collection
 
-This repository contains a curated and automatically updated collection of smart contracts used by reputable cryptocurrency tokens across various blockchain networks. It includes advanced features such as honeypot detection, security checks, and a modern, responsive interface.
+This repository contains a curated and automatically updated collection of smart contracts used by reputable cryptocurrency tokens across various blockchain networks. It includes advanced security checks, honeypot detection, and a modern, responsive web interface for exploring the contracts.
 
 ## Features
 
-- Multi-chain support (Ethereum, Binance Smart Chain, Polygon)
-- Automated contract syncing and validation
-- Honeypot detection and security analysis
-- SEO-optimized content
-- Responsive design for all devices
-- Real-time contract data updates
+- Automatic contract syncing from multiple blockchain networks
+- Advanced security and honeypot checks
+- SEO-optimized web interface
+- Responsive design for mobile and desktop devices
+- Integration with public blockchain explorers and analysis tools
 
 ## Supported Networks
 
 - Ethereum
 - Binance Smart Chain (BSC)
 - Polygon
+- Avalanche
+- Fantom
 
 ## Directory Structure
 
@@ -23,9 +24,8 @@ This repository contains a curated and automatically updated collection of smart
 - `scripts/`: Python scripts for automating contract syncing, validation, and security checks.
 - `config/`: Configuration files for supported networks and API sources.
 - `schema/`: JSON Schema for contract metadata validation.
-- `.github/workflows/`: GitHub Actions for automated processes.
-- `static/`: Static assets including CSS, JavaScript, and images.
-- `src/`: Source code for the web application.
+- `.github/workflows/`: GitHub Actions for automated contract syncing, validation, and security checks.
+- `frontend/`: React-based frontend for the web interface.
 
 ## Automation
 
@@ -33,7 +33,7 @@ This repository uses GitHub Actions to automatically:
 
 1. Sync contracts from various sources periodically.
 2. Validate contract metadata against a predefined schema.
-3. Perform security checks and honeypot detection on contracts.
+3. Perform security and honeypot checks on synced contracts.
 4. Update the web interface with the latest contract data.
 
 ## Usage
@@ -43,4 +43,3 @@ To view the contracts and analysis, visit our [web interface](https://example.co
 To run the scripts locally:
 
 1. Install the required dependencies:
-
