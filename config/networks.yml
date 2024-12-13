@@ -1,0 +1,12 @@
+ethereum:
+  api_url: "https://api.etherscan.io/api"
+  explorer_url: "https://etherscan.io"
+
+bsc:
+  api_url: "https://api.bscscan.com/api"
+  explorer_url: "https://bscscan.com"
+
+polygon:
+  api_url: "https://api.polygonscan.com/api"
+  explorer_url: "https://polygonscan.com"
+
