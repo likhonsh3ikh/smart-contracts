@@ -3,29 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Contracts Collection</title>
+    <title>Smart Contracts Collection - Curated Cryptocurrency Token Contracts</title>
+    <meta name="description" content="Explore our curated collection of smart contracts used by reputable cryptocurrency tokens across Ethereum, Binance Smart Chain, and Polygon networks.">
+    <meta name="keywords" content="smart contracts, cryptocurrency, blockchain, Ethereum, Binance Smart Chain, Polygon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <link rel="stylesheet" href="static/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Smart Contracts Collection",
+      "url": "https://example.com",
+      "description": "A curated collection of smart contracts used by reputable cryptocurrency tokens across various blockchain networks."
+    }
+    </script>
 </head>
-<body>
-    <header>
-        <h1>Smart Contracts Collection</h1>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-200">
+    <header class="bg-blue-600 dark:bg-blue-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Smart Contracts Collection</h1>
+            <button id="darkModeToggle" class="p-2 rounded-full bg-blue-500 dark:bg-blue-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+            </button>
+        </div>
     </header>
-    <main>
-        <section id="networks">
-            <h2>Supported Networks</h2>
-            <ul>
-                <li><a href="#" data-network="ethereum">Ethereum</a></li>
-                <li><a href="#" data-network="bsc">Binance Smart Chain</a></li>
-                <li><a href="#" data-network="polygon">Polygon</a></li>
-            </ul>
+    <main class="container mx-auto p-4">
+        <section id="networks" class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Supported Networks</h2>
+            <div class="flex flex-wrap gap-4">
+                <button class="network-btn" data-network="ethereum">Ethereum</button>
+                <button class="network-btn" data-network="bsc">Binance Smart Chain</button>
+                <button class="network-btn" data-network="polygon">Polygon</button>
+            </div>
+        </section>
+        <section id="stats" class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Network Statistics</h2>
+            <canvas id="networkStats" width="400" height="200"></canvas>
         </section>
         <section id="contracts">
-            <h2>Contracts</h2>
-            <div id="contract-list"></div>
+            <h2 class="text-2xl font-semibold mb-4">Contracts</h2>
+            <div id="contract-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Smart Contracts Collection. All rights reserved.</p>
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Smart Contracts Collection. All rights reserved.</p>
+        </div>
     </footer>
     <script src="static/js/script.js"></script>
 </body>
